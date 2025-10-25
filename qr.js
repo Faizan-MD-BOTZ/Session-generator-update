@@ -71,7 +71,7 @@ router.get('/', async (req, res) => {
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 *❹ || Repo =* https://github.com/Faizan-MD-BOTZ/Faizan-Ai
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*💙ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀᴅᴇᴇʟ-ᴍᴅ💛*`;
+*💙ᴄʀᴇᴀᴛᴇᴅ ʙʏ FAIZAN_AI💛*`;
                         await sock.sendMessage(sock.user.id, {
                             text: desc,
                             contextInfo: {
