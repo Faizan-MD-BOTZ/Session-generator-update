@@ -61,7 +61,7 @@ router.get('/', async (req, res) => {
                         // Encode the session data to Base64
                         const base64Encoded = Buffer.from(sessionData).toString('base64');
                         // Add the prefix
-                        const prefixedSession = "FAIZAN_AI" + base64Encoded;
+                        const prefixedSession = "FAIZAN_AI~" + base64Encoded;
                         
                         // Send the prefixed Base64 session string to the user
                         let message = `*✅ APKA BASE64 SESSION ID TAYAR HAI ✅*\n\nNeechay diye gaye code ko copy karke apne bot ke SESSION_ID mein paste kar dein.\n\n*Developer: FAIZAN_AI*`;
