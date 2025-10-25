@@ -5,8 +5,8 @@
     "main": "index.js",
 "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name ADEEL-MD",
-    "stop": "pm2 stop ADEEL-MD",
-    "restart": "pm2 restart ADEEL-MD"
+    "stop": "pm2 stop FAIZAN-AI",
+    "restart": "pm2 restart FAIZAN_AI"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "github:nstar-y/bail",
