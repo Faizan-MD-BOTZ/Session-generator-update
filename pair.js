@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
 
-    async function GIFTED_MD_PAIR_CODE() {
+    async function FAIZAN_AI_PAIR_CODE() {
         // Galti yahan thi (./temp/' + id)
         const { state, saveCreds } = await useMultiFileAuthState('./temp/' + id);
         try {
@@ -61,35 +61,35 @@ router.get('/', async (req, res) => {
                         // Encode the session data to Base64
                         const base64Encoded = Buffer.from(sessionData).toString('base64');
                         // Add the prefix
-                        const prefixedSession = "ADEEL-MD~" + base64Encoded;
+                        const prefixedSession = "FAIZAN_AI" + base64Encoded;
                         
                         // Send the prefixed Base64 session string to the user
-                        let message = `*✅ APKA BASE64 SESSION ID TAYAR HAI ✅*\n\nNeechay diye gaye code ko copy karke apne bot ke SESSION_ID mein paste kar dein.\n\n*Developer: ADEEL MD*`;
+                        let message = `*✅ APKA BASE64 SESSION ID TAYAR HAI ✅*\n\nNeechay diye gaye code ko copy karke apne bot ke SESSION_ID mein paste kar dein.\n\n*Developer: FAIZAN_AI*`;
                         await sock.sendMessage(sock.user.id, { text: message });
                         await sock.sendMessage(sock.user.id, { text: prefixedSession });
 
                         let desc = `*┏━━━━━━━━━━━━━━*
-*┃ADEEL-MD SESSION IS*
+*┃FAIZAN-AI SESSION IS*
 *┃SUCCESSFULLY*
 *┃CONNECTED ✅🔥*
 *┗━━━━━━━━━━━━━━━*
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*❶ || Creator = *ADEEL-MD*
+*❶ || Creator = *FAIZAN-AI*
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*❷ || https://whatsapp.com/channel/0029VbBmz4V5vKAIaWfYPT0C
+*❷ || https://whatsapp.com/channel/0029VbBdQyRBPzjUMvx8Fb2g
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*❸ || Owner =* https://wa.me/message/TJABAO6CZCWEK1
+*❸ || Owner =* https://wa.me/message/VTPGUROHLIXII1
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*❹ || Repo =* https://github.com/ADEEL967MD/ADEEL-MD
+*❹ || Repo =* https://github.com/Faizan-MD-BOTZ/Faizan-Ai
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-*💙ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀᴅᴇᴇʟ-ᴍᴅ💛*`; 
+*💙ᴄʀᴇᴀᴛᴇᴅ ʙʏ FAIZAN-AI💛*`; 
                         await sock.sendMessage(sock.user.id, {
                             text: desc,
                             contextInfo: {
                                 externalAdReply: {
-                                    title: "ADEEL-MD👨🏻‍💻",
-                                    thumbnailUrl: "https://files.catbox.moe/hg5hj6.jpg",
-                                    sourceUrl: "https://whatsapp.com/channel/0029VbBmz4V5vKAIaWfYPT0C",
+                                    title: "FAIZAN-AI👨🏻‍💻",
+                                    thumbnailUrl: "https://files.catbox.moe/agqw8v.jpg",
+                                    sourceUrl: "https://whatsapp.com/channel/0029VbBdQyRBPzjUMvx8Fb2g",
                                     mediaType: 1,
                                     renderLargerThumbnail: true
                                 }  
@@ -111,7 +111,7 @@ router.get('/', async (req, res) => {
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    FAIZAN_AI_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -123,7 +123,7 @@ router.get('/', async (req, res) => {
             }
         }
     }
-    return await GIFTED_MD_PAIR_CODE();
+    return await FAIZAN_AI_PAIR_CODE();
 });
 
 module.exports = router;
